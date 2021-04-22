@@ -82,6 +82,25 @@ public class Main {
 
         // Fibonacci
 
+        int x = 0;
+        int w = 1;
+
+        System.out.println(w);
+
+        for (int h = 1; h <= 9; h++) {
+            if (x <= w)  {
+                x = x + w;
+                System.out.println(x);
+
+            }
+            else {
+                w = x + w;
+                System.out.println(w);
+
+            }
+        }
+
+
 
     }
 }
