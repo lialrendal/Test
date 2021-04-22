@@ -42,7 +42,7 @@ public class Main {
 
 
 
-        //Reverse string (+ palyndrome)
+        //Reverse string (+ palindrome)
 
         String str = "test";
 
