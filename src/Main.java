@@ -44,7 +44,7 @@ public class Main {
 
         //Reverse string (+ palyndrome)
 
-
+        String str = "test";
 
         // Switch case
 
