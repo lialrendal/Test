@@ -44,7 +44,15 @@ public class Main {
 
         //Reverse string (+ palindrome)
 
-        String str = "test";
+        StringBuilder str = new StringBuilder("test");
+        System.out.println(str);
+        StringBuilder rev = new StringBuilder(str).reverse();
+        System.out.println(rev);
+        if (str == rev) {
+            System.out.println("This word is a palindrome.");
+        }
+
+
 
         // Switch case
 
