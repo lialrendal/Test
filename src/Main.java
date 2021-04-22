@@ -56,9 +56,10 @@ public class Main {
 
         // Switch case
 
-        char c = 'a';
+        Character c = 'A';
+        Character b = Character.toLowerCase(c);
 
-        switch (c)  {
+        switch (b)  {
             case 'a':
                 System.out.println( "This character is a vowel.");
                 break;
@@ -77,6 +78,9 @@ public class Main {
             default:
                 System.out.println( "This character is a consonant.");
         }
+
+
+        // Fibonacci
 
 
     }
