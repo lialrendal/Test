@@ -1,6 +1,54 @@
-
+import java.util.List;
 
 public class Main {
+
+    public static int factorial(int num_factorial)  {
+        // Factorial calculator
+
+        int result = 1;
+
+        for (int i = 1; i <= num_factorial; i++) {
+            result = result * i;
+        }
+
+        return result;
+    }
+
+    public static List<Integer> primeNumber(int trial) {
+
+        // Prime number checker
+
+        int e;
+        List<Integer> primeList = null;
+        boolean invalid = false;
+        for (e = 1; e <= trial; e++) {
+            for (int j = 2; j < e; j++) {
+                if (e % j == 0)  {
+                    invalid = true;
+                }
+            }
+            if (!invalid) {
+                System.out.println(e + " is a prime number.");
+                primeList.add(e);
+            }
+            invalid = false;
+        }
+        return primeList;
+    }
+
+    public static void reverseString(String sb)  {
+        //Reverse string (+ palindrome)
+
+        StringBuilder str = new StringBuilder(sb);
+        System.out.println(str);
+        StringBuilder rev = new StringBuilder(str).reverse();
+        System.out.println(rev);
+        if (str == rev) {
+            System.out.println("This word is a palindrome.");
+        }
+    }
+
+
     public static void main(String[] args) {
 
         //Even-Odd Check
@@ -13,44 +61,14 @@ public class Main {
             System.out.println(X + " is an odd number");
         }
 
-        // Factorial calculator
-
-        int num_factorial = 7;
-        int result = 1;
-
-        for (int i = 1; i <= num_factorial; i++) {
-            result = result * i;
-        }
-        System.out.println(result);
+        System.out.println(factorial(9));
 
 
-        // Prime number checker
-
-        int e;
-        boolean invalid = false;
-        for (e = 1; e <= 100; e++) {
-            for (int j = 2; j < e; j++) {
-                if (e % j == 0)  {
-                    invalid = true;
-                }
-            }
-            if (invalid == false) {
-                System.out.println(e + " is a prime number.");
-            }
-            invalid = false;
-        }
+        primeNumber(304);
 
 
+        reverseString("Croissant");
 
-        //Reverse string (+ palindrome)
-
-        StringBuilder str = new StringBuilder("test");
-        System.out.println(str);
-        StringBuilder rev = new StringBuilder(str).reverse();
-        System.out.println(rev);
-        if (str == rev) {
-            System.out.println("This word is a palindrome.");
-        }
 
 
 
