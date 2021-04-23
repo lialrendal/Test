@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -19,7 +20,7 @@ public class Main {
         // Prime number checker
 
         int e;
-        List<Integer> primeList = null;
+        List<Integer> primeList = new ArrayList<Integer>();
         boolean invalid = false;
         for (e = 1; e <= trial; e++) {
             for (int j = 2; j < e; j++) {
@@ -36,45 +37,20 @@ public class Main {
         return primeList;
     }
 
-    public static void reverseString(String sb)  {
+    public static StringBuilder reverseString(String sb)  {
         //Reverse string (+ palindrome)
 
         StringBuilder str = new StringBuilder(sb);
         System.out.println(str);
         StringBuilder rev = new StringBuilder(str).reverse();
-        System.out.println(rev);
         if (str == rev) {
             System.out.println("This word is a palindrome.");
         }
+        return rev;
     }
 
 
-    public static void main(String[] args) {
-
-        //Even-Odd Check
-
-        int X = 75;
-        if (X%2 == 0)  {
-            System.out.println("This number is even.");
-        }
-        else {
-            System.out.println(X + " is an odd number");
-        }
-
-        System.out.println(factorial(9));
-
-
-        primeNumber(304);
-
-
-        reverseString("Croissant");
-
-
-
-
-        // Switch case
-
-        Character c = 'A';
+    public static void switchCase(Character c) {
         Character b = Character.toLowerCase(c);
 
         switch (b)  {
@@ -96,28 +72,65 @@ public class Main {
             default:
                 System.out.println( "This character is a consonant.");
         }
+    }
 
+    public static List<Integer> fibonacci(int limit)  {
 
-        // Fibonacci
 
         int x = 0;
         int w = 1;
+        List<Integer> fibonacci_list = new ArrayList<Integer>();
 
-        System.out.println(w);
+        fibonacci_list.add(x);
+        fibonacci_list.add(w);
 
-        for (int h = 1; h <= 9; h++) {
+        for (int h = 1; h <= limit-2; h++) {
             if (x <= w)  {
                 x = x + w;
-                System.out.println(x);
-
+                fibonacci_list.add(x);
             }
             else {
                 w = x + w;
-                System.out.println(w);
+                fibonacci_list.add(w);
 
             }
         }
+        return fibonacci_list;
+    }
 
+
+    public static void main(String[] args) {
+
+        //Even-Odd Check
+
+        int X = 75;
+        if (X%2 == 0)  {
+            System.out.println("This number is even.");
+        }
+        else {
+            System.out.println(X + " is an odd number");
+        }
+
+        System.out.println(factorial(9));
+
+
+        // Prime number calculator
+
+        primeNumber(304);
+
+        // Switch case
+
+        reverseString("Croissant");
+
+
+
+        // Switch case
+
+        switchCase('M');
+
+        // Fibonacci
+
+        fibonacci(15);
 
 
     }
