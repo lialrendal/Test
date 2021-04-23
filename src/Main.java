@@ -29,7 +29,6 @@ public class Main {
                 }
             }
             if (!invalid) {
-                System.out.println(e + " is a prime number.");
                 primeList.add(e);
             }
             invalid = false;
@@ -108,7 +107,7 @@ public class Main {
 
         // Prime number calculator
 
-        primeNumber(304);
+        System.out.println(primeNumber(304));
 
         // Switch case
 
@@ -120,8 +119,7 @@ public class Main {
 
         // Fibonacci
 
-        fibonacci(15);
-
+        System.out.println(fibonacci(15));
 
     }
 }
