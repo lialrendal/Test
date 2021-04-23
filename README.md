@@ -4,7 +4,7 @@ Ejercicios:
 
 1.- Hacer un código que devuelva el factorial de un número:
 
- n! = 1*2*3*...*n 
+ n! = 1 * 2 * 3 * ... * n 
 
 2.- Hacer un código que compruebe si un número es primo.
 
