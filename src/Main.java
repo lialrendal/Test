@@ -55,17 +55,9 @@ public class Main {
 
         switch (b)  {
             case 'a':
-                System.out.println( "This character is a vowel.");
-                break;
             case 'e':
-                System.out.println( "This character is a vowel.");
-                break;
             case 'i':
-                System.out.println( "This character is a vowel.");
-                break;
             case 'o':
-                System.out.println( "This character is a vowel.");
-                break;
             case 'u':
                 System.out.println( "This character is a vowel.");
                 break;
@@ -121,8 +113,6 @@ public class Main {
         // Switch case
 
         reverseString("Croissant");
-
-
 
         // Switch case
 
