@@ -1,14 +1,11 @@
-# Ejercicio 2
+# Ejercicio 3
 
-Implementa un algoritmo en el que dado un entero n > 1, calcule e imprima los elementos correspondientes a la 
-Conjetura de Ullman (en honor al matematico S. Ullman). La conjetura consiste en lo siguiente:
+Implemente una función que sirva para cifrar un texto con el conocido método de César. 
+El criptosistema consiste en el desplazamiento de 3 caracteres en la posición del caracter a cifrar, es decir, 
+la A se sustituye por la D, la B por la E, ..., la X por la A, la Y por la B y la Z por la C. 
+Por simplicidad, supondremos que el texto a cifrar solo contiene caracteres alfabéticos. 
+Por tanto el ejercicio consiste en implementar la siguiente función:
 
-- Empieza con cualquier entero positivo.
+public String cifradoCesar(String cadenaACifrar)
 
-- Si es par, se divide entre 2; si es impar se multiplica por 3 y se agrega 1.
-
-- Se itera hasta obtener el número 1.
-
-- Al final se obtendrá el número 1, independientemente del entero inicial. Por ejemplo,
-
-Cuando el entero inicial es 26, la secuencia será: 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1
+La funcion recibe como parámetro la cadena a cifrar y devuelve un objeto String con la cadena cifrada mediante el sistema de Cesar.
