@@ -1,7 +1,7 @@
 
 public class Main {
 
-    public static StringBuilder cifradoCesar (java.lang.String cadenaACifrar)  {
+    public static StringBuilder cifradoCesar (String cadenaACifrar)  {
         int i = 0;
         cadenaACifrar = cadenaACifrar.toLowerCase();
         StringBuilder result = new StringBuilder(cadenaACifrar);
