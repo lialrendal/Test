@@ -1,11 +1,15 @@
-# Ejercicio 3
+# Ejercicio 6
 
-Implemente una función que sirva para cifrar un texto con el conocido método de César. 
-El criptosistema consiste en el desplazamiento de 3 caracteres en la posición del caracter a cifrar, es decir, 
-la A se sustituye por la D, la B por la E, ..., la X por la A, la Y por la B y la Z por la C. 
-Por simplicidad, supondremos que el texto a cifrar solo contiene caracteres alfabéticos. 
-Por tanto el ejercicio consiste en implementar la siguiente función:
+Haz una clase llamada Password que siga las siguientes condiciones:
 
-public String cifradoCesar(String cadenaACifrar)
+Que tenga los atributos longitud y contraseña . Por defecto, la longitud sera de 8.
+Los constructores serán los siguiente:
+- Un constructor por defecto.
+- Un constructor con la longitud que nosotros le pasemos. Generara una contraseña aleatoria con esa longitud.
 
-La funcion recibe como parámetro la cadena a cifrar y devuelve un objeto String con la cadena cifrada mediante el sistema de Cesar.
+Los métodos que implementa serán:
+
+- esFuerte(): devuelve un booleano si es fuerte o no, para que sea fuerte debe tener mas de 2 mayúsculas, mas de 1 minúscula y mas de 5 números.
+- generarPassword():  genera la contraseña del objeto con la longitud que tenga.
+- Método get para contraseña y longitud.
+- Método set para longitud.
