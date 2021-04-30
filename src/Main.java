@@ -3,9 +3,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        Password test = new Password(8);
-        System.out.println(test.getContrasena());
-        System.out.println(test.esFuerte());
+        Raices test = new Raices(1,8,2);
+        System.out.println(test.getDiscriminante());
+        System.out.println(test.tieneRaices());
+        test.calcular();
+
 
     }
 
