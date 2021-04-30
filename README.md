@@ -1,11 +1,16 @@
-# Ejercicio 3
+# Ejercicio 7
 
-Implemente una función que sirva para cifrar un texto con el conocido método de César. 
-El criptosistema consiste en el desplazamiento de 3 caracteres en la posición del caracter a cifrar, es decir, 
-la A se sustituye por la D, la B por la E, ..., la X por la A, la Y por la B y la Z por la C. 
-Por simplicidad, supondremos que el texto a cifrar solo contiene caracteres alfabéticos. 
-Por tanto el ejercicio consiste en implementar la siguiente función:
+Vamos a realizar una clase llamada Raices, donde representaremos los valores de una ecuación de 2º grado.
+Tendremos los 3 coeficientes como atributos, llamémosles a, b y c.
+Hay que insertar estos 3 valores para construir el objeto.
+Las operaciones que se podrán hacer son las siguientes:
 
-public String cifradoCesar(String cadenaACifrar)
+- obtenerRaices(): imprime las 2 posibles soluciones
+- obtenerRaiz(): imprime única raíz, que será cuando solo tenga una solución posible.
+- getDiscriminante(): devuelve el valor del discriminante (double), el discriminante tiene la siguiente formula, (b^2)-4ac
+- tieneRaices(): devuelve un booleano indicando si tiene dos soluciones, para que esto ocurra, el discriminante debe ser mayor o igual que 0.
+- tieneRaiz(): devuelve un booleano indicando si tiene una única solución, para que esto ocurra, el discriminante debe ser igual que 0.
+- calcular(): mostrara por consola las posibles soluciones que tiene nuestra ecuación, en caso de no existir solución, mostrarlo también.
 
-La funcion recibe como parámetro la cadena a cifrar y devuelve un objeto String con la cadena cifrada mediante el sistema de Cesar.
+Formula ecuación 2º grado: (-b±√((b^2)-(4ac)))/(2*a)
+Solo varia el signo delante de -b
